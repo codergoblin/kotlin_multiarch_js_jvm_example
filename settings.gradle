@@ -1,0 +1,15 @@
+pluginManagement {
+    plugins {
+        id 'org.jetbrains.kotlin.multiplatform' version '1.5.0'
+        id 'org.jetbrains.kotlin.js' version '1.5.0'
+        id 'org.jetbrains.kotlin.jvm' version '1.5.0'
+    }
+}
+
+rootProject.name = 'kotlin-web-multi-arch'
+
+
+include 'api'
+include 'client'
+include 'server'
+

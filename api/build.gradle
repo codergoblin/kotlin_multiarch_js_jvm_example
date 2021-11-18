@@ -1,0 +1,26 @@
+plugins {
+    id 'org.jetbrains.kotlin.multiplatform'
+}
+
+group 'io.codegoblin'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+kotlin {
+    jvm()
+    js {
+        useCommonJs()
+        browser()
+    }
+
+    sourceSets {
+        commonMain {
+            dependencies {
+                implementation kotlin('stdlib-common')
+            }
+        }
+    }
+}
